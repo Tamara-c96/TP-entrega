@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto-Final</title>
+    <link rel="icon" href="./imagenes/logo.svg">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -14,19 +15,80 @@
     </noscript>
 
     <nav>
+
         <a href="index.html">
+            
             <svg  >
                 <rect id="cuadroAzul" x="75" y="0" rx="5" fill="#3F6797" width="65px" height="38px"></rect>
                 <rect id="cuadroCeleste" x="81" y="5" rx="5" fill="#B1D5E4" width="54px" height="28px"></rect>
-                <polyline id="cuadroAZUL2" points="90 44, 126 44, 155 63,52 63,90 44" fill="#3F6797"> </polyline>
-                <polyline id="cuadroCELE2" points="90 48, 125 48, 140 58, 72 58, 90 48 " fill="#B1D5E4"> </polyline>
+                <polyline id="cuadroAzul" points="90 44, 126 44, 155 63,52 63,90 44" fill="#3F6797"> </polyline>               
+                <polyline id="cuadroCeleste" points="90 48, 125 48, 140 58, 72 58, 90 48 " fill="#B1D5E4"> </polyline>
             </svg>            
-        </a>
-        <a class="pNav" href="historia.html">HISTORIA</a>
-        <a class="pNav" href="juguemos.html">JUEGUEMOS</a>
+        </a>  
+
+        <div class="botones">
+            <a class="pNav" href="historia.html">HISTORIA</a>
+            <a class="pNav" href="juguemos.html">JUGUEMOS</a>            
+        </div>
+
     </nav>
 
     <header>
-        <p class="pHeader">PROGRAMACION E HISTORIA</p>
+        <h1 class="pHeaderJuguemos">JUGUEMOS UN POCO</h1>
     </header>
 
+    <main class="mainJuguemos">
+        <h1>Armemos el rompecabezas y veamos que imagen es...</h1>
+
+        <div class="divContenedorJuguemos">
+
+            <div class="juguemos">
+                <p class="pDiv">Arrastre y suelte la imágene aquí</p>
+            </div>
+            <div class="juguemos">
+                <p class="pDiv">Arrastre y suelte la imágene aquí</p>
+            </div>
+            <div class="juguemos">
+                <p class="pDiv">Arrastre y suelte la imágene aquí</p>
+            </div>
+
+        </div>
+
+        <div class="juguemosImagenes">
+            <div class="Imagenes">
+                <img src="./imagenes/rompe2.png" alt="" srcset="">
+            </div>
+            <div class="Imagenes">
+                <img src="./imagenes/Rompe1.png" alt="" srcset="">
+            </div>
+            <div class="Imagenes">
+                <img src="./imagenes/Rompe3.png" alt="" srcset="">
+            </div>
+
+   
+        </div>
+
+
+
+    </main>
+
+    <footer>
+        <div class="izqFdiv">
+            <a href="index.html">
+                <svg  >
+                    <rect id="cuadroAzul" x="75" y="0" rx="5" fill="#3F6797" width="65px" height="38px"></rect>
+                    <rect id="cuadroCeleste" x="81" y="5" rx="5" fill="#B1D5E4" width="54px" height="28px"></rect>
+                    <polyline id="cuadroAzul" points="90 44, 126 44, 155 63,52 63,90 44" fill="#3F6797"> </polyline>                   
+                    <polyline id="cuadroCeleste" points="90 48, 125 48, 140 58, 72 58, 90 48 " fill="#B1D5E4"> </polyline>
+                </svg>                    
+            </a>
+            <p class="pF-1">PROGRAMACION <br>E<br>HISTORIA</p>            
+        </div>
+
+        <p class="pF-2">
+            Sitio con fines educativos - Creado por M.Victoria Lopez
+        </p>    
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
