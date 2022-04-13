@@ -10,10 +10,15 @@ nav{
 }
 
 header{
+    margin-top: 10px;
     height: 500px;
     background-size:cover ;
     background-attachment:fixed ;
     background-image: url(./imagenes/codigo.jpeg);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 main{
@@ -76,7 +81,6 @@ svg{
     height: 70px ;  
 }
 
-
 .botones{
     width: 350px;
     display: flex;
@@ -97,68 +101,19 @@ svg{
 }
 
 /****header****/
-
-/*.pHeader{
-    position: relative;
-    top: 200px;
-    left: 400px;
-    width: 770px;
+h1{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
     font-size: 55px;
     font-weight:900;
-    background-size:contain ;
-    text-shadow: 4px 3px 0px #000000;
-    color: #F0F5E4;
-    background-color:#2D2D2D;
-}*/
-.pHeader{
-    position: relative;
-    top: 200px;
-    left: 400px;
-    width: 770px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    font-size: 55px;
-    font-weight:900;
-    background-size:contain ;
     text-shadow: 4px 3px 0px #000000;
     color: #F0F5E4;
     background-color:#2D2D2D;
 }
 
-.pHeaderHistoria{
-    position: relative;
-    top: 200px;
-    left: 350px;
-    width: 900px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    font-size: 55px;
-    font-weight:900;
-    background-size:contain ;
-    text-shadow: 4px 3px 0px #000000;
-    color: #F0F5E4;
-    background-color:#2D2D2D;
-}
 
-.pHeaderJuguemos{
-    position: relative;
-    top: 200px;
-    left: 500px;
-    width: 570px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-align: center;
-    font-size: 55px;
-    font-weight:900;
-    background-size:contain ;
-    text-shadow: 4px 3px 0px #000000;
-    color: #F0F5E4;
-    background-color:#2D2D2D;
-}
 
 /*********main************/
-h1{
+h2{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #F0F5E4;
     font-size: 40px;
@@ -367,6 +322,7 @@ svg{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-around;
 }
 
 .pF-1{
@@ -377,6 +333,7 @@ svg{
     height: 70px;
     display: flex;
     align-items: center;
+    font-weight:bold ;
 }
 
 .pF-2{
