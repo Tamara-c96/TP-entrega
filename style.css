@@ -7,6 +7,7 @@ nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 header{
@@ -26,10 +27,30 @@ main{
     display: grid; 
 }
 
+.mainHistoria{
+    padding-top: 200px;
+    height: 1550px;
+    display: grid;
+    grid-template-columns: repeat(2,500px);
+    grid-template-rows: repeat(2,100px);
+    row-gap: 300px;
+    column-gap: 250px;
+    justify-content: center;
+}
+
+.mainJuguemos{
+    height: 1100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 25px;
+}
+
 section{
     display: flex;
     flex-direction: column;
-    height: 1050px;
+    height: 900px;
     align-items: center;
 }
 
@@ -42,35 +63,61 @@ footer{
 }
 
 /**ANIMACIONES**/
-#cuadroAzul{
-    animation-name: logo1;
+.cuadroAzul{
+    animation-name: logoAzul;
     animation-duration: 1s;
+
 }
 
-#cuadroCeleste{
-    animation-name: logo2;
-    animation-duration: 1s;
+.cuadroCeleste{
+    animation-name: logoCeleste;
+    animation-duration: 1.5s;
 }
 
-@keyframes logo1{
-    from{
-        transform: translate(0px,-25px);
-        opacity: 20%;
+@keyframes logoAzul{
+    0%{
+        transform: translate(0px,-150px);
+        opacity: 0%;
     }
-    
-    to{
+
+    100%{
         transform: translate(0px,0px)
     }
 }
 
-@keyframes logo2{
-    from{
-        transform: translate(0px,-40px);
-        opacity: 20%;
+@keyframes logoCeleste{
+    0%{
+        transform: translate(0px,-200px);
+        opacity: 0%;
     }
-    
-    to{
-        transform: translate(0px,0px)
+        
+    15%{
+        opacity: 15%;
+
+    }
+
+    25%{
+        opacity: 25%;
+    }
+
+    50%{
+        opacity: 50%;
+
+    }
+     
+    75%{
+        opacity: 75%;
+
+    }
+    85%{
+        opacity: 85%;
+        transform: translate(0px,-2px);
+
+    }
+
+    100%{
+        transform: translate(0px,0px);
+        opacity: 100%;
     }
 }
 
@@ -81,7 +128,7 @@ svg{
     height: 70px ;  
 }
 
-.botones{
+.divBotones{
     width: 350px;
     display: flex;
     flex-direction: row;
@@ -89,7 +136,7 @@ svg{
     justify-content: space-evenly;
 }
 
-.pNav{
+.botones{
     color: #154454;
     text-decoration: none;
     background-color:#F0F5E4 ;
@@ -99,6 +146,12 @@ svg{
     box-shadow: 2px 3px #154454;
     padding: 12px 15px;
 }
+
+.botones:active{
+    box-shadow: none;
+    translate: 4px 4px;
+}
+
 
 /****header****/
 h1{
@@ -162,17 +215,11 @@ h2{
     margin-bottom: 15px;
 }
 
-/************main-historia*************/
-.mainHistoria{
-    padding-top: 200px;
-    height: 1800px;
-    display: grid;
-    grid-template-columns: repeat(2,500px);
-    grid-template-rows: repeat(2,100px);
-    row-gap: 300px;
-    column-gap: 250px;
-    justify-content: center;
+.aIndexDiv:active{
+    box-shadow:none;
+    translate: 4px 4px;
 }
+/************main-historia*************/
 
 .bloqueTexto{
     width: 630px;
@@ -201,6 +248,7 @@ h2{
     flex-direction: row;
     justify-content: space-evenly;
     width: 1400px;
+    align-items: center;
 }
 
 .pBlancoChico{
@@ -231,9 +279,6 @@ h2{
 }
 
 /***********main-juguemos***********/
-.mainJuguemos{
-    height: 1500px;
-}
 
 .divContenedorJuguemos{
     display: flex;
@@ -241,7 +286,7 @@ h2{
     justify-content: center;
 }
 
-.juguemos{
+.divJuguemos{
     background: #818181;
     width: 250px;
     height: 400px;
@@ -249,40 +294,58 @@ h2{
 }
 
 .juguemosImagenes{
+    height: 610px;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    column-gap: 10px;
 }
 
-.Imagenes{
-    width: 200px;
+.imgJuguemos{
     height: 400px;
+    width: 250px;
+}
+
+.BotonReiniciar{
+    color: #154454;
+    text-decoration: none;
+    background-color:#F0F5E4 ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 2px 3px #154454;
+    padding: 12px 15px; 
+    width: 250px;
+}
+
+.BotonReiniciar:active{
+    box-shadow: none;
+    translate: 4px 4px ;
 }
 
 /*********section-historia************/
 #divContenedorVideo{
     background-color: #000000;
-    height: 650px;
-    width: 1000px;
+    height: 664px;
+    width: 1062px;
     display:flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 
 video{
-    height: 550px;
+    height: 590px;
 }
 
 #divBarraVideo{
     height: 55px;
-    width: 980px;
+    width: 1050px;
     background-color: #2D2D2D;
     border-radius: 10px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-bottom: 5px;
 }
 
 .botonesVideo{
@@ -304,11 +367,21 @@ video{
     margin-right: 15px;
 }
 
+#botonPlay:active{
+    box-shadow:none;
+    translate: 4px 4px;
+}
+
 #botonPausa{
     background-color: #F0F5E4;
     padding: 19px 38px;
     border-radius: 10px;
     box-shadow: 2px 4px #154454;
+}
+
+#botonPausa:active{
+    box-shadow:none;
+    translate: 4px 4px;
 }
 
 /*********footer************/

@@ -8,69 +8,60 @@
     <link rel="icon" href="./imagenes/logo.svg">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <noscript>
-        <p>La página que estás viendo requiere para su funcionamiento el uso de JavaScript.
-        Si lo has deshabilitado intencionadamente, por favor vuelve a activarlo.</p>
-    </noscript>
+    <body>
+        <noscript>
+            <p>La página que estás viendo requiere para su funcionamiento el uso de JavaScript.
+            Si lo has deshabilitado intencionadamente, por favor vuelve a activarlo.</p>
+        </noscript>
+    <!--Nav-->
+        <nav>
 
-    <nav>
+            <a href="index.html">
+                <svg  >
+                    <rect class="cuadroAzul" x="75" y="0" rx="5" fill="#3F6797" width="65px" height="38px"></rect>
+                    <rect class="cuadroCeleste" x="81" y="5" rx="5" fill="#B1D5E4" width="54px" height="28px"></rect>
+                    <polyline class="cuadroAzul" points="90 44, 126 44, 155 63,52 63,90 44" fill="#3F6797"> </polyline>                   
+                    <polyline class="cuadroCeleste" points="90 48, 125 48, 140 58, 72 58, 90 48 " fill="#B1D5E4"> </polyline>
+                </svg>             
+            </a>  
 
-        <a href="index.html">
-            
-            <svg  >
-                <rect id="cuadroAzul" x="75" y="0" rx="5" fill="#3F6797" width="65px" height="38px"></rect>
-                <rect id="cuadroCeleste" x="81" y="5" rx="5" fill="#B1D5E4" width="54px" height="28px"></rect>
-                <polyline id="cuadroAzul" points="90 44, 126 44, 155 63,52 63,90 44" fill="#3F6797"> </polyline>               
-                <polyline id="cuadroCeleste" points="90 48, 125 48, 140 58, 72 58, 90 48 " fill="#B1D5E4"> </polyline>
-            </svg>            
-        </a>  
-
-        <div class="botones">
-            <a class="pNav" href="historia.html">HISTORIA</a>
-            <a class="pNav" href="juguemos.html">JUGUEMOS</a>            
-        </div>
-
-    </nav>
-
-    <header>
-        <h1 class="pHeader">JUGUEMOS UN POCO</h1>
-    </header>
-
-    <main class="mainJuguemos">
-        <h2>Armemos el rompecabezas y veamos que imagen es...</h2>
-
-        <div class="divContenedorJuguemos">
-
-            <div class="juguemos">
-                <p class="pDiv">Arrastre y suelte la imágene aquí</p>
-            </div>
-            <div class="juguemos">
-                <p class="pDiv">Arrastre y suelte la imágene aquí</p>
-            </div>
-            <div class="juguemos">
-                <p class="pDiv">Arrastre y suelte la imágene aquí</p>
+            <div class="divBotones">
+                <a class="botones" href="historia.html">HISTORIA</a>
+                <a class="botones" href="juguemos.html">JUGUEMOS</a>            
             </div>
 
-        </div>
+        </nav>
+    <!--Header-->
+        <header>
+            <h1 class="pHeader">JUGUEMOS UN POCO</h1>
+        </header>
+    <!--Main-->
+        <main class="mainJuguemos">
+            <h2>Armemos el rompecabezas y veamos que imagen es...</h2>
 
-        <div class="juguemosImagenes">
-            <div class="Imagenes">
-                <img src="./imagenes/rompe2.png" alt="" srcset="">
+            <div class="divContenedorJuguemos">
+
+                <div class="divJuguemos">
+                    <p class="pDiv">Arrastre y suelte la imágene aquí</p>
+                </div>
+                <div class="divJuguemos">
+                    <p class="pDiv">Arrastre y suelte la imágene aquí</p>
+                </div>
+                <div class="divJuguemos">
+                    <p class="pDiv">Arrastre y suelte la imágene aquí</p>
+                </div>
+
             </div>
-            <div class="Imagenes">
-                <img src="./imagenes/Rompe1.png" alt="" srcset="">
+
+            <div class="juguemosImagenes">
+                    <img class="imgJuguemos" src="./imagenes/rompe2.png" alt="Parte de una Imagen al unir con las restantes forman la oración: 'Somos parte de la historia'" srcset="">
+                    <img class="imgJuguemos" src="./imagenes/Rompe1.png" alt="Parte de una Imagen al unir con las restantes forman la oración: 'Somos parte de la historia'" srcset="">
+                    <img class="imgJuguemos" src="./imagenes/Rompe3.png" alt="Parte de una Imagen al unir con las restantes forman la oración: 'Somos parte de la historia'" srcset="">
             </div>
-            <div class="Imagenes">
-                <img src="./imagenes/Rompe3.png" alt="" srcset="">
-            </div>
 
-   
-        </div>
+                <a href="./juguemos.html" class="BotonReiniciar" draggable="false">Reiniciar</a>
+        </main>
 
-
-
-    </main>
-
-    <script src="./script.js"></script>
-</body>
+        <script src="./script.js"></script>
+    </body>
+</html>
